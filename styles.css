@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.title {
+    text-align: center;
+}
+
+textarea {
+    display: block;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow:2px 2px 2px 1px grey;
+}
+
+button:focus {
+    border: 1px solid black;
+}
+
+.mainBlock {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.navBar button {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.createBox {
+    margin:auto;
+    width: 380px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.createBox textarea {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+}
+
+.createBox button {
+    width: fit-content;
+}
+
+.flashCards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcard {
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flashcard h2 {
+    font-size: 1rem;
+}
+
+@media(max-width:768px) {
+    .flashcard {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:480px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .createBox {
+        width: 100%;
+    }
+    .flashcard {
+        width: 100%;
+    }
+}
